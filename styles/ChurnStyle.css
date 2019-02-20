@@ -22,7 +22,6 @@
 /* Global declarations */
 * {
   box-sizing: border-box;
-  border: dashed 1px #36494e;
 }
 .center {
   text-align: center;
@@ -33,66 +32,126 @@
 }
 header {
   font-family: 'eburyserif', serif;
+  font-size: 1.4em;
+  text-align: center;
 }
+nav img {
+  height: 2em;
+  }
+nav ul {
+  margin:0;
+  padding:0;
+}
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+  position:relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: #dd7373;
+  background: #ede6e3;
+  border-bottom:solid 1px #ede6e3;
+}
+nav ul li a:hover {
+  color: #ede6e3;
+  background: #dd7373;
+  border-bottom:solid 1px #ede6e3;
+}
+nav ul.dropdown {
+  display:none;
+  position: absolute;
+  width: 100%
+}
+nav ul.dropdown li {
+  display: block;
+}
+nav ul.dropdown li a {
+  border: solid 1px #36494e;
+}
+nav ul li:hover > ul.dropdown {
+  display:block;
+}
+
 body {
   background: #ede6e3;
   font-family: 'timesans', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
+}
+main {
+  margin: 0 10%;
 }
 h1 {
   font-family: 'eburyserif', serif;
-  font-size: 36px;
+  font-size: 2em;
+  margin: 1em 0;
+  text-align: center;
 }
 h2 {
   font-family: 'eburyserif', serif;
-  font-size: 32px;
+  font-size: 1.8em;
+  margin: 1em 0;
 }
 h3 {
   font-family: 'eburyserif', serif;
-  font-size: 28px;
+  font-size: 1.6em;
+  margin: 0.75em 0;
 }
 h4 {
   font-family: 'eburyserif', serif;
-  font-size: 24px;
+  font-size: 1.4em;
+  margin: 0.75em 0;
 }
 h5 {
   font-family: 'eburyserif', serif;
-  font-size: 20px;
+  font-size: 1.2em;
+  margin: 0.5em 0;
 }
 h6 {
   font-family: 'eburyserif', serif;
-  font-size: 16px;
+  font-size: 1em;
+  margin: 0.5em 0;
 }
 p {
-
+  line-height: 1.2em;
+  max-width: 60em;
 }
 div {
-
 }
 ul {
-
 }
 ol {
-
 }
 blockquote {
   font-family: 'windsans', monospace;
   font-style: italic;
+  max-width: 60em;
+}
+table {
+  margin 1em;
+}
+tr th, tr td {
+  margin; 1.2em 0;
+  border-bottom: solid 1px black;
 }
 img {
 
 }
 a {
-
+  font-family: 'windsans', monospace;
 }
 footer {
   font-family: 'eburyserif', serif;
+  text-align: center;
 }
 /*  Grid system */
 .grid_unit {
   padding: 0.5em;
-  background-color: #173753;
+  background-color: #3e92cc;
   margin: 0 0.5em;
+  min-height: 1em;
 }
 .row {
   display:flex;
