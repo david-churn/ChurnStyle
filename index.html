@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- <link rel="stylesheet" href="./styles/skeleton.css" /> -->
     <link rel="stylesheet" href="./styles/ChurnStyle.css" />
     <title></title>
   </head>
@@ -11,33 +12,31 @@
     <header>
       We got a header going on up here.
       <nav class="row">
-        <div class="flex1">
-          <img src="./pics/David-logo.png" alt="Logo">
+        <div class="flex2">
+          <img src="./pics/David-logo.png" alt="David Logo">
         </div>
-        <div class="flex4">
-          <ul class="row">
-            <li class="flex1"><a href="#biography">Biography</a></li>
-            <li class="flex1"><a href="#">Portfolio</a>
-              <ul class="dropdown">
-                <li>
-                  <a href="#riseset">Sunrise and Sunset</a>
-                </li>
-                <li>
-                  <a href="#triviality">Trivality</a>
-                </li>
-              </ul>
-            </li>
-            <li class="flex1"><a href="#">Technologies</a>
-              <ul class="dropdown">
-                <li>
-                  <a href="#curriculum">Web Development</a>
-                </li>
-                <li>
-                  <a href="#mainframe">Mainframe Architect</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div class="flex10">
+          <div class="">
+            <ul class="row">
+              <li class="flex1">1st section</li>
+              <li class="flex1">2nd section
+                <ul class="dropdown">
+                  <li><a>1st of 2nd</a></li>
+                  <li><a>2nd of 2nd</a></li>
+                </ul>
+              </li>
+              <li class="flex1">3rd section
+                <ul class="dropdown">
+                  <li><a>1st of 3rd</a></li>
+                  <li><a>2nd of 3rd</a></li>
+                  <li><a>3rd of 3rd</a></li>
+                  <li><a>4th of 3rd</a></li>
+                  <li><a>5th of 3rd</a></li>
+                  <li><a>6th of 3rd</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -48,6 +47,7 @@
       <h4>Heading Four</h4>
       <h5>Heading Five</h5>
       <h6>Heading Six</h6>
+      <img src="https://picsum.photos/200/300/?random" alt="random picture">
       <p>Twee raw denim <a href="#">wayfarers</a>, XOXO four dollar toast vegan helvetica literally swag. Mumblecore stumptown poutine cardigan, kogi keytar occupy plaid meggings beard bitters distillery sartorial aesthetic pitchfork. Pinterest yuccie helvetica, church-key dreamcatcher marfa artisan. Chillwave letterpress church-key gluten-free direct trade keytar squid palo santo. Offal hoodie poutine, banjo whatever meh man braid leggings taxidermy selfies single-origin coffee mlkshk bicycle rights lomo venmo. Cardigan four dollar toast sustainable migas yr. Organic tilde 8-bit, lo-fi sustainable literally keytar dreamcatcher food truck tofu. Wolf lomo hella yuccie chambray tattooed. Viral fanny pack pabst hashtag prism shaman vape asymmetrical. Cornhole enamel pin banh mi iceland offal air plant tofu pour-over chartreuse lumbersexual tousled.</p>
       <p>Drinking vinegar adaptogen organic, plaid celiac chicharrones activated charcoal banjo 8-bit wayfarers. Literally brooklyn forage yuccie banjo letterpress pickled coloring book. Retro chia air plant kombucha. Migas scenester plaid bespoke, sriracha twee small batch gochujang salvia af vape normcore hexagon cliche iceland. Typewriter butcher raw denim occupy, hammock you probably haven't heard of them actually. Skateboard semiotics air plant wolf meggings yr actually kitsch pop-up sriracha copper mug freegan trust fund. Organic farm-to-table mixtape YOLO, tbh intelligentsia butcher gluten-free tumblr activated charcoal microdosing 8-bit. Mixtape lo-fi tote bag, craft beer polaroid pork belly af small batch authentic meditation plaid. Slow-carb ramps fashion axe, actually whatever coloring book swag food truck live-edge viral cloud bread. Stumptown cronut master cleanse godard helvetica PBRB. Narwhal keytar gastropub put a bird on it forage next level you probably haven't heard of them.</p>
       <ul>
@@ -104,6 +104,11 @@
       </fieldset>
       <input type="submit" value="Submit form">
     </form>
+    <h2>Button Examples</h2>
+    <button type="button" class="">default button</button>
+    <button type="button" class="rev-btn">reverse button</button>
+    <button type="button" class="tech-btn">tech button</button>
+    <h2>Table Example</h2>
     <table>
       <tr>
         <th>Company</th>
@@ -141,6 +146,7 @@
         <td>Italy</td>
       </tr>
     </table>
+    <h2>Grid Example</h2>
     <div class="row">
       <div class="grid_unit flex1">The quick brown fox jumps over the lazy dog.</div>
       <div class="grid_unit flex1">The quick brown fox jumps over the lazy dog.</div>
@@ -156,25 +162,25 @@
       <div class="grid_unit flex1">The quick brown fox jumps over the lazy dog.</div>
     </div>
     <div class="row">
-      <div class="grid_unit flex5">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex7">The quick brown fox jumped over the lazy dog.</div>
+      <div class="grid_unit flex5">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex7">The quick brown fox jumps over the lazy dog.</div>
     </div>
     <div class="row">
-      <div class="grid_unit flex2">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex2">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex2">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex2">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex2">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex2">The quick brown fox jumped over the lazy dog.</div>
+      <div class="grid_unit flex2">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex2">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex2">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex2">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex2">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex2">The quick brown fox jumps over the lazy dog.</div>
     </div>
     <div class="row">
-      <div class="grid_unit flex6">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex3">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex3">The quick brown fox jumped over the lazy dog.</div>
+      <div class="grid_unit flex6">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex3">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex3">The quick brown fox jumps over the lazy dog.</div>
     </div>
     <div class="row">
-      <div class="grid_unit flex5">The quick brown fox jumped over the lazy dog.</div>
-      <div class="grid_unit flex7">The quick brown fox jumped over the lazy dog.</div>
+      <div class="grid_unit flex5">The quick brown fox jumps over the lazy dog.</div>
+      <div class="grid_unit flex7">The quick brown fox jumps over the lazy dog.</div>
     </div>
   </main>
     <footer>

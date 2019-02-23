@@ -1,8 +1,8 @@
 /* 2/18/2019  David Churn created */
 /* Themed front from dafont.com */
 @font-face {
-  font-family: 'eburyserif';
-  src: url('../fonts/EdmundsburySerif.ttf') format('truetype');
+  font-family: 'spaceranger';
+  src: url('../fonts/spaceranger.ttf') format('truetype');
 }
 @font-face {
   font-family: 'timesans';
@@ -13,11 +13,11 @@
   src: url('../fonts/wind.ttf') format('truetype');
 }
 /*  Colors
-#36494e  charcoal
-#173753  space cadet (blue)
-#3e92cc  celestial blue
-#ffa630  deep saffron (yellowish)
-#ede6e3  platinum
+#0f1108  smoky
+#2b243c  metal
+#85db4c  kiwi
+#f0eff4  sunny
+#f0eff4  whitish
 */
 /* Global declarations */
 * {
@@ -31,7 +31,8 @@
   /* display:none; */
 }
 header {
-  font-family: 'eburyserif', serif;
+  color: #2b243c;
+  font-family: 'spaceranger', serif;
   font-size: 1.4em;
   text-align: center;
 }
@@ -46,19 +47,21 @@ nav ul li {
   list-style-type: none;
   text-align: center;
   position:relative;
+  top: 0;
+  right: 0;
 }
 nav ul li a {
   display: block;
   padding: 0.5em 0;
   text-decoration: none;
-  color: #dd7373;
-  background: #ede6e3;
-  border-bottom:solid 1px #ede6e3;
+  color: #2b243c;
+  background: #f0eff4;
+  border-bottom:solid 1px #f0eff4;
 }
 nav ul li a:hover {
-  color: #ede6e3;
-  background: #dd7373;
-  border-bottom:solid 1px #ede6e3;
+  color: #f0eff4;
+  background: #2b243c;
+  border-bottom:solid 1px #f0eff4;
 }
 nav ul.dropdown {
   display:none;
@@ -76,7 +79,7 @@ nav ul li:hover > ul.dropdown {
 }
 
 body {
-  background: #ede6e3;
+  background: #f0eff4;
   font-family: 'timesans', sans-serif;
   font-size: 1em;
 }
@@ -84,38 +87,38 @@ main {
   margin: 0 10%;
 }
 h1 {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   font-size: 2em;
   margin: 1em 0;
   text-align: center;
 }
 h2 {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   font-size: 1.8em;
   margin: 1em 0;
 }
 h3 {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   font-size: 1.6em;
   margin: 0.75em 0;
 }
 h4 {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   font-size: 1.4em;
   margin: 0.75em 0;
 }
 h5 {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   font-size: 1.2em;
   margin: 0.5em 0;
 }
 h6 {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   font-size: 1em;
   margin: 0.5em 0;
 }
 p {
-  line-height: 1.2em;
+  line-height: 1.5em;
   max-width: 60em;
 }
 div {
@@ -132,24 +135,29 @@ blockquote {
 table {
   margin 1em;
 }
-tr th, tr td {
+th, td {
   margin; 1.2em 0;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #0f1108;
+}
+th {
+  background: #85db4c;
+  color: #0f1108;
 }
 img {
-
+  border: solid 1px #0f1108;
 }
 a {
-  font-family: 'windsans', monospace;
+
 }
 footer {
-  font-family: 'eburyserif', serif;
+  font-family: 'spaceranger', serif;
   text-align: center;
 }
 /*  Grid system */
 .grid_unit {
   padding: 0.5em;
-  background-color: #3e92cc;
+  background-color: #85db4c;
+  color: #2b243c;
   margin: 0 0.5em;
   min-height: 1em;
 }
@@ -192,4 +200,21 @@ footer {
 }
 .flex12 {
   flex:12;
+}
+/* buttons */
+button {
+  background: #f0eff4;
+  border: solid 1px ;
+  border-radius: 50%;
+  color: #2b243c;
+  min-height: 2em;
+}
+.tech-btn {
+  background: #85db4c;
+  font-family: 'spaceranger', serif;
+
+}
+.rev-btn {
+  color: #f0eff4;
+  background: #0f1108;
 }
