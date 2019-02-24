@@ -13,7 +13,7 @@
       We got a header going on up here.
       <nav class="row">
         <div class="flex2">
-          <img src="./pics/David-logo.png" alt="David Logo">
+          <img class="logo" src="./pics/David-logo.png" alt="David Logo">
         </div>
         <div class="flex10">
           <div class="">
@@ -41,12 +41,15 @@
       </nav>
     </header>
     <main>
+      <h1 class="center">Centered Heading</h1>
       <h1>Heading One</h1>
       <h2>Heading Two</h2>
       <h3>Heading Three</h3>
       <h4>Heading Four</h4>
       <h5>Heading Five</h5>
       <h6>Heading Six</h6>
+      <p class="hidden sranger">This is a hidden sentence with the technofont class.</p>
+      <p>A link to <a href="https://tallgrassschool.com/">The Tallgrass School</a> for questions.</p>
       <img src="https://picsum.photos/200/300/?random" alt="random picture">
       <p>Twee raw denim <a href="#">wayfarers</a>, XOXO four dollar toast vegan helvetica literally swag. Mumblecore stumptown poutine cardigan, kogi keytar occupy plaid meggings beard bitters distillery sartorial aesthetic pitchfork. Pinterest yuccie helvetica, church-key dreamcatcher marfa artisan. Chillwave letterpress church-key gluten-free direct trade keytar squid palo santo. Offal hoodie poutine, banjo whatever meh man braid leggings taxidermy selfies single-origin coffee mlkshk bicycle rights lomo venmo. Cardigan four dollar toast sustainable migas yr. Organic tilde 8-bit, lo-fi sustainable literally keytar dreamcatcher food truck tofu. Wolf lomo hella yuccie chambray tattooed. Viral fanny pack pabst hashtag prism shaman vape asymmetrical. Cornhole enamel pin banh mi iceland offal air plant tofu pour-over chartreuse lumbersexual tousled.</p>
       <p>Drinking vinegar adaptogen organic, plaid celiac chicharrones activated charcoal banjo 8-bit wayfarers. Literally brooklyn forage yuccie banjo letterpress pickled coloring book. Retro chia air plant kombucha. Migas scenester plaid bespoke, sriracha twee small batch gochujang salvia af vape normcore hexagon cliche iceland. Typewriter butcher raw denim occupy, hammock you probably haven't heard of them actually. Skateboard semiotics air plant wolf meggings yr actually kitsch pop-up sriracha copper mug freegan trust fund. Organic farm-to-table mixtape YOLO, tbh intelligentsia butcher gluten-free tumblr activated charcoal microdosing 8-bit. Mixtape lo-fi tote bag, craft beer polaroid pork belly af small batch authentic meditation plaid. Slow-carb ramps fashion axe, actually whatever coloring book swag food truck live-edge viral cloud bread. Stumptown cronut master cleanse godard helvetica PBRB. Narwhal keytar gastropub put a bird on it forage next level you probably haven't heard of them.</p>
@@ -63,12 +66,12 @@
       <div>
         <h2>Section Title</h2>
         <h3>Section subtitle</h3>
-        <p>Section description Intelligentsia mustache umami, YOLO migas freegan austin adaptogen forage hexagon 3 wolf moon thundercats fanny pack venmo. Leggings migas pabst, semiotics cray iPhone hammock. Kombucha af messenger bag man braid tumeric asymmetrical vape gluten-free narwhal portland pabst fanny pack jean shorts franzen. Jean shorts ugh truffaut next level cloud bread roof party.</p>
+        <p>Intelligentsia mustache umami, YOLO migas freegan austin adaptogen forage hexagon 3 wolf moon thundercats fanny pack venmo. Leggings migas pabst, semiotics cray iPhone hammock. Kombucha af messenger bag man braid tumeric asymmetrical vape gluten-free narwhal portland pabst fanny pack jean shorts franzen. Jean shorts ugh truffaut next level cloud bread roof party.</p>
       </div>
       <div>
         <h2>Section Title</h2>
         <h3>Section subtitle</h3>
-        <p>Section description Trust fund vinyl semiotics sustainable cred swag YOLO selvage humblebrag pinterest try-hard. Authentic cronut subway tile lomo knausgaard vaporware. Offal locavore waistcoat, dreamcatcher yr gluten-free subway tile crucifix pop-up distillery asymmetrical cronut brooklyn. Pok pok keytar shaman pitchfork selvage. Tattooed kogi forage unicorn.</p>
+        <p>Trust fund vinyl semiotics sustainable cred swag YOLO selvage humblebrag pinterest try-hard. Authentic cronut subway tile lomo knausgaard vaporware. Offal locavore waistcoat, dreamcatcher yr gluten-free subway tile crucifix pop-up distillery asymmetrical cronut brooklyn. Pok pok keytar shaman pitchfork selvage. Tattooed kogi forage unicorn.</p>
       </div>
       <blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
     <form>
@@ -86,9 +89,18 @@
         <div><label for="url-input">URL input</label> <input id="url-input" type="url" placeholder="http://"></div>
         <div><label for="password-input">Password input</label> <input id="password-input" type="password" value="password"></div>
         <div><label for="select-field">Select field</label> <select id="select-field"><option selected="selected">Option 01</option><option>Option 02</option></select></div>
-        <div><label for="multiple-select-field">Multiple select field</label><select id="multiple-select-field" multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
-        <div><label for="radio-input"><input id="radio-input" type="radio" name="rad"> Radio input</label></div>
-        <div><label for="checkbox-input"><input id="checkbox-input" type="checkbox"> Checkbox input</label></div>
+        <div><label for="multiple-select-field">Multiple select field </label><select id="multiple-select-field" multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
+        <div class="">There is only one
+          <input type="radio" name="rad"> Radio
+          <input type="radio" name="rad"> Television
+          <input type="radio" name="rad"> Streaming
+        </div>
+        <div class="">Select all that apply
+          <input type="checkbox"> Input
+          <input type="checkbox"> Output
+          <input type="checkbox"> CRUD
+          <input type="checkbox"> Archive
+        </div>
         <div><label for="file-input">File input</label> <input id="file-input" type="file"></div>
         <div><label for="textarea">Textarea</label> <textarea id="textarea" cols="30" rows="5" >Textarea text</textarea></div>
         <div><label for="color-input">Color input</label> <input id="color-input" type="color" value="#000000"></div>
@@ -146,7 +158,11 @@
         <td>Italy</td>
       </tr>
     </table>
-    <h2>Grid Example</h2>
+    <h2>Code Example</h2>
+    <div class="border">
+      <code>Here is a sample of a really long coding statement to see how the browser will render all this text in one, single line.</code>
+    </div>
+  <h2>Grid Example</h2>
     <div class="row">
       <div class="grid_unit flex1">The quick brown fox jumps over the lazy dog.</div>
       <div class="grid_unit flex1">The quick brown fox jumps over the lazy dog.</div>
@@ -181,6 +197,17 @@
     <div class="row">
       <div class="grid_unit flex5">The quick brown fox jumps over the lazy dog.</div>
       <div class="grid_unit flex7">The quick brown fox jumps over the lazy dog.</div>
+    </div>
+    <h2>Card Example</h2>
+    <div class="">Coding Example inside a card
+      <div class="card border">
+        <code>Intelligentsia mustache umami, YOLO migas freegan austin adaptogen forage hexagon 3 wolf moon thundercats fanny pack venmo. Leggings migas pabst, semiotics cray iPhone hammock. </code>
+      </div>
+    </div>
+    <div class="">Text Example inside a card
+      <div class="card border">
+        <p>Trust fund vinyl semiotics sustainable cred swag YOLO selvage humblebrag pinterest try-hard. Authentic cronut subway tile lomo knausgaard vaporware. Offal locavore waistcoat, dreamcatcher yr gluten-free subway tile crucifix pop-up distillery asymmetrical cronut brooklyn. Pok pok keytar shaman pitchfork selvage. Tattooed kogi forage unicorn. </p>
+      </div>
     </div>
   </main>
     <footer>

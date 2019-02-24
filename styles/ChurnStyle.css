@@ -1,5 +1,15 @@
 /* 2/18/2019  David Churn created */
-/* Themed front from dafont.com */
+/* Futuristic style layout */
+/*  Guide
+  fonts
+  Colors
+  global declaractions
+  buttons
+  grid system
+  input fields
+*/
+
+/* Fonts from dafont.com */
 @font-face {
   font-family: 'spaceranger';
   src: url('../fonts/spaceranger.ttf') format('truetype');
@@ -15,20 +25,13 @@
 /*  Colors
 #0f1108  smoky
 #2b243c  metal
-#85db4c  kiwi
-#f0eff4  sunny
+#d1efb5  green tea
+#fcfc7e  sunny
 #f0eff4  whitish
 */
 /* Global declarations */
 * {
   box-sizing: border-box;
-}
-.center {
-  text-align: center;
-}
-.hidden {
-  background: #ffa630;
-  /* display:none; */
 }
 header {
   color: #2b243c;
@@ -36,9 +39,6 @@ header {
   font-size: 1.4em;
   text-align: center;
 }
-nav img {
-  height: 2em;
-  }
 nav ul {
   margin:0;
   padding:0;
@@ -56,11 +56,6 @@ nav ul li a {
   text-decoration: none;
   color: #2b243c;
   background: #f0eff4;
-  border-bottom:solid 1px #f0eff4;
-}
-nav ul li a:hover {
-  color: #f0eff4;
-  background: #2b243c;
   border-bottom:solid 1px #f0eff4;
 }
 nav ul.dropdown {
@@ -88,49 +83,44 @@ main {
 }
 h1 {
   font-family: 'spaceranger', serif;
-  font-size: 2em;
+  font-size: 3em;
   margin: 1em 0;
-  text-align: center;
 }
 h2 {
   font-family: 'spaceranger', serif;
-  font-size: 1.8em;
-  margin: 1em 0;
+  font-size: 2.6em;
 }
 h3 {
   font-family: 'spaceranger', serif;
-  font-size: 1.6em;
-  margin: 0.75em 0;
+  font-size: 2.2em;
 }
 h4 {
   font-family: 'spaceranger', serif;
-  font-size: 1.4em;
-  margin: 0.75em 0;
+  font-size: 1.8em;
 }
 h5 {
   font-family: 'spaceranger', serif;
-  font-size: 1.2em;
-  margin: 0.5em 0;
+  font-size: 1.4em;
 }
 h6 {
   font-family: 'spaceranger', serif;
   font-size: 1em;
-  margin: 0.5em 0;
 }
 p {
   line-height: 1.5em;
-  max-width: 60em;
+  max-width: 50em;
 }
 div {
-}
-ul {
-}
-ol {
+  margin: 0.2em 0;
 }
 blockquote {
   font-family: 'windsans', monospace;
   font-style: italic;
-  max-width: 60em;
+  max-width: 45em;
+}
+code {
+  background: #fcfc7e;
+  max-width: 45em;
 }
 table {
   margin 1em;
@@ -140,23 +130,56 @@ th, td {
   border-bottom: solid 1px #0f1108;
 }
 th {
-  background: #85db4c;
+  background: #d1efb5;
   color: #0f1108;
 }
+/* Pictures should have borders.  Unless they are logos. */
 img {
   border: solid 1px #0f1108;
 }
-a {
-
+a:hover {
+  background: #fcfc7e;
 }
 footer {
   font-family: 'spaceranger', serif;
+  margin-top: 1em;
   text-align: center;
+}
+
+/* buttons */
+button,
+input[type="submit"],
+input[type="rest"],
+input[type="button"]  {
+  background: #f0eff4;
+  border: solid 1px #0f1108;
+  border-radius: 50%;
+  color: #2b243c;
+  min-height: 2em;
+}
+.tech-btn {
+  background: #d1efb5;
+  color: #0f1108;
+  font-family: 'spaceranger', serif;
+}
+.rev-btn {
+  color: #f0eff4;
+  background: #0f1108;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="rest"]:hover,
+input[type="button"]:hover,
+.tech-btn:hover,
+.rev-btn:hover,
+.grid_unit:hover {
+  color: #0f1108;
+  background: #fcfc7e;
 }
 /*  Grid system */
 .grid_unit {
   padding: 0.5em;
-  background-color: #85db4c;
+  background-color: #d1efb5;
   color: #2b243c;
   margin: 0 0.5em;
   min-height: 1em;
@@ -201,20 +224,42 @@ footer {
 .flex12 {
   flex:12;
 }
-/* buttons */
-button {
-  background: #f0eff4;
-  border: solid 1px ;
-  border-radius: 50%;
-  color: #2b243c;
-  min-height: 2em;
+/* Form fields */
+form div {
+  margin: 0.5em;
 }
-.tech-btn {
-  background: #85db4c;
+legend {
   font-family: 'spaceranger', serif;
-
+  font-size: 2em;
 }
-.rev-btn {
-  color: #f0eff4;
-  background: #0f1108;
+textarea {
+  max-height: 3.5em;
+  line-height: 1.5em;
+  padding: 0.25em;
+  width: 80%;
+}
+/* Useful classes to override defaults. */
+.border {
+  border: solid 1px #0f1108;
+}
+.card {
+  background: #d1efb5;
+  margin: 0 1%;
+  padding: 0.5%;
+}
+.center {
+  text-align: center;
+}
+/* Use this class for development to display hidden information in a contrasting color.  In production, comment out the color and restore the display */
+.hidden {
+  background: orange;
+  /* display:none; */
+}
+.logo {
+  height: 2em;
+  width: auto;
+  border: none;
+}
+.sranger {
+  font-family: 'spaceranger', serif;
 }
