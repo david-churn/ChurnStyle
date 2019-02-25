@@ -17,11 +17,7 @@
 }
 @font-face {
   font-family: 'timesans';
-  src: url('../fonts/timess__.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'windsans';
-  src: url('../fonts/wind.ttf') format('truetype');
+  src: url('../fonts/times__.ttf') format('truetype');
 }
 /*  Colors
 #0f1108  smoky
@@ -113,11 +109,7 @@ div {
   margin: 0.2em 0;
 }
 blockquote {
-  font-family: 'windsans', monospace;
   font-style: italic;
-  max-width: 45em;
-}
-code {
   max-width: 45em;
 }
 table {
@@ -144,6 +136,7 @@ footer {
   font-family: 'spaceranger', serif;
   margin-top: 1em;
   text-align: center;
+  clear: both;
 }
 
 /* buttons */
@@ -258,14 +251,13 @@ textarea {
   background: orange;
   /* display:none; */
 }
+.italicize {
+  font-style: italic;
+}
 .logo {
   height: 2em;
   width: auto;
   border: none;
-}
-.quoting {
-  font-family: 'windsans', monospace;
-  font-style: italic;
 }
 .sranger {
   font-family: 'spaceranger', serif;
