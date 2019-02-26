@@ -17,7 +17,7 @@
     <p>The base document is given an off-white color so form fields will stand out from the background color.  Light green is used to split sections of the document and is available by using <code>class="card"</code>.  Yellow is used for highlighting items when they are hovered over.</p>
     <h3>Fonts</h3>
     <p>The header, footer, section titles (h1-h6), and form legend are all preset to include the <span class="sranger">techno-like</span> font to make them pop off the page.</p>
-    <p>The regular text uses a readable font because we do not want to go completely over the top.  <span class="italicize">Paragraph lines are limited to make them easier to read.</span></p>
+    <p>The regular text uses a readable font because we do not want to go completely over the top. Quotes are italicized to distinguish them from regular text.</p>
     <div class="card">
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
@@ -27,7 +27,6 @@
       <h6>Heading 6</h6>
       <p>paragraph - The quick brown fox jumps over the lazy dog. Trust fund vinyl semiotics sustainable cred swag YOLO selvage humblebrag pinterest try-hard. Authentic cronut subway tile lomo knausgaard vaporware. Offal locavore waistcoat, dreamcatcher yr gluten-free subway tile crucifix pop-up distillery asymmetrical cronut brooklyn. Pok pok keytar shaman pitchfork selvage. Tattooed kogi forage unicorn.</p>
     </div>
-    <p>Quotes are italicized to distinguish them from regular text.</p>
     <div class="card">
       <p><blockquote cite="https://en.wikipedia.org/wiki/Grace_Hopper">A ship in port is safe, but that's not what ships are built for.</blockquote> - Adm. Grace Hopper
     </div>
@@ -51,6 +50,15 @@
             <input type="checkbox"> CRUD
             <input type="checkbox"> Archive
           </div>
+          <div>Wind Direction
+            <select>
+              <option value="" selected disabled></option>
+              <option value="N">North</option>
+              <option value="E">East</option>
+              <option value="W">West</option>
+              <option value="S">South</option>
+            </select>
+          </div>
           <input type="submit" value="Submit form">
         </fieldset>
       </form>
@@ -61,6 +69,35 @@
       <img src="https://picsum.photos/200/300/?random" alt="random picture">
       <p> &#60; is a random picture.  Twee raw denim <a href="#">wayfarers</a>, XOXO four dollar toast vegan helvetica literally swag. Mumblecore stumptown poutine cardigan, kogi keytar occupy plaid meggings beard bitters distillery sartorial aesthetic pitchfork. Pinterest yuccie helvetica, church-key dreamcatcher marfa artisan. Chillwave letterpress church-key gluten-free direct trade keytar squid palo santo. Offal hoodie poutine, banjo whatever meh man braid leggings taxidermy selfies single-origin coffee mlkshk bicycle rights lomo venmo. Cardigan four dollar toast sustainable migas yr. Organic tilde 8-bit, lo-fi sustainable literally keytar dreamcatcher food truck tofu. Wolf lomo hella yuccie chambray tattooed. Viral fanny pack pabst hashtag prism shaman vape asymmetrical. Cornhole enamel pin banh mi iceland offal air plant tofu pour-over chartreuse lumbersexual tousled.</p>
     </div>
+    <h3>Tables</h3>
+    <p>Table are implemented with a highlighted header row.  The text in the header is centered.  There are automatic lines below each row to assist readability.</p>
+    <table>
+      <tr>
+        <th>Book</th>
+        <th>Author</th>
+        <th>Genre</th>
+      </tr>
+      <tr>
+        <td>Insistence of Vision</td>
+        <td>David Brin</td>
+        <td>Science Fiction</td>
+      </tr>
+      <tr>
+        <td>Age of War</td>
+        <td>Michael J. Sullivan</td>
+        <td>Fantasy</td>
+      </tr>
+      <tr>
+        <td>A People's History of the United States</td>
+        <td>Howard Zinn</td>
+        <td>History</td>
+      </tr>
+      <tr>
+        <td>Hi Bob!</td>
+        <td>Bob Newhart</td>
+        <td>Biography</td>
+      </tr>
+    </table>
     <h2>Options Available</h2>
     <h3>Buttons</h3>
     <p>There are three different buttons available.  All use the oval shape and highlight in yellow when the cursor hovers over them.  The reversed button is invoked by using <code>class="rev-btn"</code>.  The special <span class="sranger">techno-like</span> button is invoked by using <code>class="tech-btn"</code>.</p>
@@ -74,25 +111,25 @@
     <h4>Code example</h4>
     <div class="card border">
       <pre>
-        &#60;div class="row"&#62;
-          &#60;div class="grid_unit flex5"&#62;flex5&#60;/div&#62;
-          &#60;div class="grid_unit flex7"&#62;flex7&#60;/div&#62;
-        &#60;/div&#62;</pre>
+&#60;div class="row"&#62;
+  &#60;div class="grid_unit flex5"&#62;flex5&#60;/div&#62;
+  &#60;div class="grid_unit flex7"&#62;flex7&#60;/div&#62;
+&#60;/div&#62;</pre>
     </div>
     <h4>Grid example</h4>
     <div class="row">
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
-      <div class="grid_unit flex1">flex1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
+      <div class="grid_unit flex1">fx1</div>
     </div>
     <div class="row">
       <div class="grid_unit flex5">flex5</div>
@@ -138,30 +175,29 @@
         </div>
       </nav>
       <pre>
-
-        &#60;nav&#62;
-          &#60;div&#62;
-            &#60;ul class="row"&#62;
-              &#60;li class="flex1"&#62;1st section&#60;/li&#62;
-              &#60;li class="flex1"&#62;2nd section
-                &#60;ul class="dropdown"&#62;
-                  &#60;li&#62;&#60;a&#62;1st of 2nd&#60;/a&#62;&#60;/li&#62;
-                  &#60;li&#62;&#60;a&#62;2nd of 2nd&#60;/a&#62;&#60;/li&#62;
-                &#60;/ul&#62;
-              &#60;/li&#62;
-              &#60;li class="flex1"&#62;3rd section
-                &#60;ul class="dropdown"&#62;
-                  &#60;li&#62;&#60;a&#62;1st of 3rd&#60;/a&#62;&#60;/li&#62;
-                  &#60;li&#62;&#60;a&#62;2nd of 3rd&#60;/a&#62;&#60;/li&#62;
-                  &#60;li&#62;&#60;a&#62;3rd of 3rd&#60;/a&#62;&#60;/li&#62;
-                  &#60;li&#62;&#60;a&#62;4th of 3rd&#60;/a&#62;&#60;/li&#62;
-                  &#60;li&#62;&#60;a&#62;5th of 3rd&#60;/a&#62;&#60;/li&#62;
-                  &#60;li&#62;&#60;a&#62;6th of 3rd&#60;/a&#62;&#60;/li&#62;
-                &#60;/ul&#62;
-              &#60;/li&#62;
-            &#60;/ul&#62;
-          &#60;/div&#62;
-        &#60;/nav&#62;
+&#60;nav&#62;
+  &#60;div&#62;
+    &#60;ul class="row"&#62;
+      &#60;li class="flex1"&#62;1st section&#60;/li&#62;
+      &#60;li class="flex1"&#62;2nd section
+        &#60;ul class="dropdown"&#62;
+          &#60;li&#62;&#60;a&#62;1st of 2nd&#60;/a&#62;&#60;/li&#62;
+          &#60;li&#62;&#60;a&#62;2nd of 2nd&#60;/a&#62;&#60;/li&#62;
+        &#60;/ul&#62;
+      &#60;/li&#62;
+      &#60;li class="flex1"&#62;3rd section
+        &#60;ul class="dropdown"&#62;
+          &#60;li&#62;&#60;a&#62;1st of 3rd&#60;/a&#62;&#60;/li&#62;
+          &#60;li&#62;&#60;a&#62;2nd of 3rd&#60;/a&#62;&#60;/li&#62;
+          &#60;li&#62;&#60;a&#62;3rd of 3rd&#60;/a&#62;&#60;/li&#62;
+          &#60;li&#62;&#60;a&#62;4th of 3rd&#60;/a&#62;&#60;/li&#62;
+          &#60;li&#62;&#60;a&#62;5th of 3rd&#60;/a&#62;&#60;/li&#62;
+          &#60;li&#62;&#60;a&#62;6th of 3rd&#60;/a&#62;&#60;/li&#62;
+        &#60;/ul&#62;
+      &#60;/li&#62;
+    &#60;/ul&#62;
+  &#60;/div&#62;
+&#60;/nav&#62;
       </pre>
     </div>
     <h3>Useful Development Classes</h3>
@@ -181,7 +217,6 @@
     <img class="logo" src="./pics/David-logo.png" alt="small logo example">
     <footer>
       <p>&copy 2019 by David Churn</p>
-      <p class=card>Note: All existing features included are considered to be in first draft status for a minimal release version.</p>
     </footer>
   </body>
 </html>
