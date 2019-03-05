@@ -36,7 +36,6 @@ nav ul li a {
 }
 nav ul.dropdown {
   display:none;
-  position: absolute;
   width: 100%
 }
 nav ul.dropdown li {
@@ -61,26 +60,11 @@ h1, h2, h3, h4, h5, h6 {
 h2, h3, h4, h5, h6 {
   margin: 0.5em 0;
 }
-h1 {
-  font-size: 3em;
-}
-h2 {
-  font-size: 2.6em;
-}
-h3 {
-  font-size: 2.2em;
-}
-h4 {
-  font-size: 1.8em;
-}
-h5 {
-  font-size: 1.4em;
-}
-h6 {
-  font-size: 1em;
-}
 p {
   line-height: 1.5em;
+}
+input {
+  max-width: 100%
 }
 div {
   margin: 0.2em 0;
@@ -98,6 +82,9 @@ th, td {
 th {
   background: $greentea;
   color: $smoky;
+}
+.scrollx {
+  overflow-x: auto;
 }
 /* Pictures should have borders.  Unless they are logos. */
 img {
@@ -154,53 +141,13 @@ input[type="button"]:hover,
   margin: 0 0.5em;
   min-height: 1em;
 }
-.row {
-  display:flex;
-  margin: 1em 0;
-}
-.flex1 {
-  flex:1;
-}
-.flex2 {
-  flex:2;
-}
-.flex3 {
-  flex:3;
-}
-.flex4 {
-  flex:4;
-}
-.flex5 {
-  flex:5;
-}
-.flex6 {
-  flex:6;
-}
-.flex7 {
-  flex:7;
-}
-.flex8 {
-  flex:8;
-}
-.flex9 {
-  flex:9;
-}
-.flex10 {
-  flex:10;
-}
-.flex11 {
-  flex:11;
-}
-.flex12 {
-  flex:12;
-}
 /* input fields */
 form div {
-  margin: 0.5em;
+  margin: 0.2em;
 }
 legend {
   font-family: $font-tech;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 textarea {
   max-height: 3.5em;
