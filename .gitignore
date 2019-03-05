@@ -1,0 +1,11 @@
+#development files
+build/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Extra Node file
+package-lock.json
